@@ -9,7 +9,7 @@ import retrofit.http.Path;
 import rx.Observable;
 
 public interface ApiInterface {
-
+// Интерфейс для получения данных о репозиториях
     @GET("users/{user}/repos")
     Observable<List<Repo>> getRepositories(@Path("user") String user);
 
